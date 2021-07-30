@@ -1,0 +1,54 @@
+.card-movie {
+  height: 345px;
+  list-style: none;
+  margin-bottom: 20px;
+  text-align: center;
+  &.checkpoint {
+    height: 0;
+    margin: 0;
+  }
+
+  .content-wrap {
+    border: 2px solid #555;
+    height: 100%;
+    padding: 20px;
+    text-align: left;
+
+    &:before,
+    &:after {
+      content: "";
+      display: table;
+    } 
+  
+    &:after {
+      clear: both;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  .poster {
+    width: 200px;
+    height: 300px;
+    object-fit: contain;
+    float: left;
+    margin-right: 20px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .link-more-info {
+    color: cadetblue;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: underline;
+    display: inline-block;
+    margin-top: 10px;
+  }
+}

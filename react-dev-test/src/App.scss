@@ -1,0 +1,46 @@
+body {
+  font-family: 'Open Sans Condensed';
+  padding: 20px 40px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+* {
+  box-sizing: border-box;
+  color: #555;
+}
+
+.wrapper {
+  width: 750px;
+  margin: 0 auto 25px auto;
+}
+
+.separating-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  > li {
+    display: inline;
+    font-size: 20px;
+    text-transform: capitalize;
+    &::after {
+      content: '|';
+      display: inline-block;
+      margin: 0 5px;
+    }
+    &:last-child {
+      &::after {
+        content: '';
+      }
+    }
+  }
+}
+
+.error {
+  font-size: 16px;
+  color: tomato;
+  text-align: center;
+}

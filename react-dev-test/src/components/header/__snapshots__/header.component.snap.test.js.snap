@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header snaptest 1`] = `
+<div
+  className="header"
+>
+  <a
+    className="logo-container"
+    href="/"
+    onClick={[Function]}
+  >
+    <svg
+      className="logo"
+    >
+      crown.svg
+    </svg>
+  </a>
+</div>
+`;

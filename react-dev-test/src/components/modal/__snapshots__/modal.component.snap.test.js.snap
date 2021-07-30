@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal snaptest 1`] = `
+<div
+  className="modal"
+>
+  <div
+    className="overlay"
+  />
+  <div
+    className="modal-container"
+  >
+    <button
+      className="modal-close"
+    >
+      <i
+        className="fa fa-close"
+      />
+    </button>
+    children
+  </div>
+</div>
+`;

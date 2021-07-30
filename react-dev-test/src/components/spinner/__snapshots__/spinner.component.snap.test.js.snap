@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Spinner snaptest 1`] = `
+<div
+  className="spinner-overlay"
+>
+  <div
+    className="spinner-container"
+  />
+</div>
+`;

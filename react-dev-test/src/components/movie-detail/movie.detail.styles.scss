@@ -1,0 +1,36 @@
+.movie-detail {
+  padding: 20px;
+
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  } 
+
+  &:after {
+    clear: both;
+  }
+
+  .poster-image {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .plot {
+    font-size: 18px;
+  }
+  p {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  .separating-info {
+    li {
+      font-size: 15px;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MoviesOverview error search snaptest 1`] = `
+<div
+  className="movies-overview"
+>
+  <FormSearchComponent />
+  <ul
+    className="movies-list"
+  />
+  <p
+    className="error"
+  >
+    Movies Not Found..
+  </p>
+</div>
+`;
+
+exports[`MoviesOverview loading search snaptest 1`] = `
+<div
+  className="movies-overview"
+>
+  <FormSearchComponent />
+  <ul
+    className="movies-list"
+  />
+  <SpinnerComponent />
+</div>
+`;
+
+exports[`MoviesOverview snaptest 1`] = `
+<div
+  className="movies-overview"
+>
+  <FormSearchComponent />
+  <ul
+    className="movies-list"
+  >
+    <CardMovieComponent
+      Title="Title"
+      Year="Year"
+      imdbID="imdbID"
+      onClick={[Function]}
+    />
+  </ul>
+</div>
+`;

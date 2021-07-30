@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormSearch render options snaptest 1`] = `
+<div
+  className="form-search"
+>
+  <form
+    onSubmit={[Function]}
+  >
+    <div
+      className="form-group"
+    >
+      <input
+        autoComplete="off"
+        id="searchMovies"
+        name="searchMovies"
+        onChange={[Function]}
+        placeholder="Search Movies.."
+        type="text"
+        value=""
+      />
+      <button
+        type="submit"
+      >
+        <i
+          className="fa fa-search"
+        />
+      </button>
+    </div>
+  </form>
+  <ul
+    className="options"
+  >
+    <li
+      onClick={[Function]}
+    >
+      Title
+       - 
+      Year
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`FormSearch snaptest 1`] = `
+<div
+  className="form-search"
+>
+  <form
+    onSubmit={[Function]}
+  >
+    <div
+      className="form-group"
+    >
+      <input
+        autoComplete="off"
+        id="searchMovies"
+        name="searchMovies"
+        onChange={[Function]}
+        placeholder="Search Movies.."
+        type="text"
+        value=""
+      />
+      <button
+        type="submit"
+      >
+        <i
+          className="fa fa-search"
+        />
+      </button>
+    </div>
+  </form>
+  <ul
+    className="options"
+  />
+</div>
+`;

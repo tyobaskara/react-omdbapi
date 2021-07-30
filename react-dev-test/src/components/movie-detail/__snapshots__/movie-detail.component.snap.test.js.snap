@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MovieDetail snaptest 1`] = `
+<div
+  className="movie-detail"
+>
+  <img
+    alt="Title"
+    className="poster-image"
+    src="Poster"
+  />
+  <h1>
+    Title
+  </h1>
+  <ul
+    className="separating-info"
+  >
+    <li>
+      Released: 
+      Released
+    </li>
+    <li>
+      imdbRating: 
+      imdbRating
+    </li>
+    <li>
+      Genre: 
+      Genre
+    </li>
+    <li>
+      Production: 
+      Production
+    </li>
+    <li>
+      Country
+    </li>
+  </ul>
+  <br />
+  <p>
+    Writer: 
+    Writer
+  </p>
+  <p>
+    Director: 
+    Director
+  </p>
+  <p>
+    Actors: 
+    Actors
+  </p>
+  <br />
+  <p>
+    Plot
+  </p>
+</div>
+`;

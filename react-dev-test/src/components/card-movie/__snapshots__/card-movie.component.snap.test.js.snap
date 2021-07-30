@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardMovie snaptest 1`] = `
+<li
+  className="card-movie"
+>
+  <div
+    className="content-wrap"
+  >
+    <div>
+      <img
+        alt="Title"
+        className="poster"
+        src="Poster"
+      />
+    </div>
+    <h2>
+      Title
+    </h2>
+    <ul
+      className="separating-info"
+    >
+      <li>
+        Type
+      </li>
+      <li>
+        Year
+      </li>
+    </ul>
+    <a
+      className="link-more-info"
+      href="//123"
+      onClick={[Function]}
+    >
+      More Info
+    </a>
+  </div>
+</li>
+`;
