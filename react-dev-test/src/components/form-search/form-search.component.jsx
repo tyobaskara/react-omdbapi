@@ -37,7 +37,6 @@ const FormSearch = (props) => {
           }
         } 
         else if (searchOptions.length) {
-          console.log('~ list', list);
           const filteredCollections = filterSearchPattern(searchOptions, searchQuery);
           if (filteredCollections.length) {
             setMoviesList(filteredCollections);
@@ -137,7 +136,7 @@ const FormSearch = (props) => {
           return (
             <li 
               key={imdbID}
-              onClick={_onOptionClick(Title, props)}
+              onClick={_onOptionClick(Title)}
             >{Title} - {Year}</li>
           );
         })}
