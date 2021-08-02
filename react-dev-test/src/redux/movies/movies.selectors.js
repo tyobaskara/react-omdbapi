@@ -19,7 +19,7 @@ export const selectIsLoadingSearch = createSelector(
 
 export const selectSearchError = createSelector(
   [selectMovies],
-  movies => movies.isSearchError
+  movies => movies.searchError
 );
 
 export const selectSearchOptions = createSelector(

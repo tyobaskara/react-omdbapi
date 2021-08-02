@@ -27,7 +27,7 @@ const FormSearch = (props) => {
     
       try {
         const { list, error } = await getMoviesList(searchQuery, moviesPage.index);
-    
+
         if (list.length) {
           if (isNextPage) {
             const concatList = moviesList.concat(list);
@@ -85,7 +85,7 @@ const FormSearch = (props) => {
     setSearchQuery(keyword);
 
     if (keyword) {
-      setAutocompleteOptions(keyword, searchOptions, (options) => {
+      setAutocompleteOptions(keyword, searchOptions, (options, error) => {
         if (options.length) {
           setSearchOptions(options);
         } else {

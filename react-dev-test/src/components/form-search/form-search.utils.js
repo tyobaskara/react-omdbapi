@@ -8,7 +8,7 @@ export const getMoviesList = async (searchQuery, pageNumber) => {
     const list = get(result, 'data.Search', []);
     const error = get(result, 'data.Error', '');
     
-    return { list, error};
+    return { list, error };
   } catch (error) {
     throw error;
   }
@@ -36,6 +36,6 @@ export const setAutocompleteOptions = async (keyword, currentOptions, callback) 
       return callback(filteredOptions);
     }
   } catch (error) {
-    throw error
+    return callback([], error);
   }
 }
