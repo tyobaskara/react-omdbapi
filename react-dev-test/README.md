@@ -3,6 +3,8 @@
 ## Start
 
 - React Hooks Movies List (omdbapi)
+- Search Movies
+- Single Page Movie Detail Page
 - Autocomplete search
 
 
