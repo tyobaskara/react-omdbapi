@@ -6,12 +6,15 @@ import {
   setAutocompleteOptions
 } from './form-search.utils';
 
+import { useKeyDownOptions } from '../../hooks/useKeyDownOptions';
+
 import './form-search.styles.scss';
 
 const FormSearch = (props) => {
+  const { searchQuery, searchOptions, setMoviesPage, moviesPage, setSearchQuery } = props;
   const [ shouldFetchMovies, setShouldFetchMovies ] = useState(false);
   const [ textInput, setTextInput ] = useState(null);
-  const { searchQuery, searchOptions, setMoviesPage, moviesPage } = props;
+  const [ selected, resetKeyDownOptions ] = useKeyDownOptions(searchOptions, setSearchQuery);
   
   const textInputRef = useCallback((textInputNode) => {
     setTextInput(textInputNode);
@@ -72,6 +75,7 @@ const FormSearch = (props) => {
         shouldFetchMovies: false
       });
     }
+
   }, [shouldFetchMovies, textInput, props, moviesPage, setMoviesPage])
 
   const _onOptionClick = (title) => () => {
@@ -83,6 +87,7 @@ const FormSearch = (props) => {
     const { setSearchQuery, setSearchOptions, searchOptions } = props;
     
     setSearchQuery(keyword);
+    resetKeyDownOptions();
 
     if (keyword) {
       setAutocompleteOptions(keyword, searchOptions, (options, error) => {
@@ -130,12 +135,14 @@ const FormSearch = (props) => {
       </form>
 
       <ul className="options">
-        {searchOptions.map((option) => {
+        {searchOptions.map((option, index) => {
           const { Title, Year, imdbID } = option;
+          const isSelected = index === selected.index;
 
           return (
             <li 
               key={imdbID}
+              className={isSelected ? 'selected' : ''}
               onClick={_onOptionClick(Title)}
             >{Title} - {Year}</li>
           );
