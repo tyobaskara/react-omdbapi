@@ -2,6 +2,10 @@
 
 ## Start
 
+- React Hooks Movies List (omdbapi)
+- Autocomplete search
+
+
 ```
 npm run start
 ```
