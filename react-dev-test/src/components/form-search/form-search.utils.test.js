@@ -42,6 +42,16 @@ describe('form search utils test', () => {
 
       expect(result).toEqual({ list: [], error: 'Error' });
     });
+
+    it('should throw error of if catch error', async () => {
+      axios.get.mockImplementationOnce(() => Promise.reject('something went wrong'));
+
+      try {
+        await getMoviesList('batman', 1);
+      } catch (error) {
+        expect(error).toEqual('something went wrong');
+      }
+    });
   });
 
   describe('filterSearchPattern', () => {
