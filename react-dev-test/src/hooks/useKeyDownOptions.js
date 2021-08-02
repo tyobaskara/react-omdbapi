@@ -25,7 +25,7 @@ export const useKeyDownOptions = (searchOptions, setSearchQuery) => {
           break;
         case 40:
           const lastIndex = searchOptions.length - 1;
-          console.log('~ selected', selected);
+          
           setSelected(({ index }) => ({
             index: index === lastIndex ? lastIndex : (index + 1),
             isUpdate: true
